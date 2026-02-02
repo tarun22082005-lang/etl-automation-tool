@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETL Automation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h1>ETL Automation Tool</h1>
+    <span>Data Engineering Utility</span>
+</header>
+
+<main class="layout">
+    <section class="card upload-card">
+        <h2>Upload Raw Dataset</h2>
+        <p>Select a CSV file to clean and transform</p>
+
+        <input type="file" id="fileInput" accept=".csv">
+
+        <button onclick="runETL()">Run ETL Pipeline</button>
+
+        <div id="loading" class="status running hidden">
+            Running ETL pipeline…
+        </div>
+    </section>
+
+    <section class="card result-card">
+        <h2>ETL Summary Report</h2>
+        <pre id="result" class="placeholder">
+Run ETL to see transformation details.
+        </pre>
+
+        <button class="secondary" onclick="downloadFile()">
+            Download Cleaned CSV
+        </button>
+    </section>
+</main>
+
+<footer class="footer">
+    Automated ETL Pipeline • Built with FastAPI & Pandas
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

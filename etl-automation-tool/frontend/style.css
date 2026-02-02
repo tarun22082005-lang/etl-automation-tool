@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+}
+
+/* Top bar */
+.topbar {
+    background: #ffffff;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.topbar span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Layout */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 32px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* Upload */
+.upload-card input {
+    margin: 16px 0;
+}
+
+button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button.secondary {
+    background: #10b981;
+    margin-top: 12px;
+}
+
+button.secondary:hover {
+    background: #059669;
+}
+
+/* Status */
+.status {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.running {
+    color: #b45309;
+}
+
+/* Result */
+pre {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    min-height: 140px;
+    overflow-x: auto;
+}
+
+.placeholder {
+    color: #9ca3af;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Utilities */
+.hidden {
+    display: none;
+}

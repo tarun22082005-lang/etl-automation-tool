@@ -1,0 +1,11 @@
+employee_id,name,age,department,salary,experience
+101,Arun,25.0,IT,50000.0,2
+102,Divya,28.5,HR,45000.0,1
+103,Rahul,30.0,IT,60000.0,5
+104,Sneha,28.0,Finance,51000.0,3
+105,Karthik,35.0,IT,75000.0,10
+106,Anu,29.0,HR,48000.0,4
+107,Manoj,28.5,Finance,52000.0,6
+108,Priya,26.0,IT,50000.0,2
+109,Santhosh,40.0,Operations,90000.0,15
+110,Meena,27.0,HR,51000.0,2

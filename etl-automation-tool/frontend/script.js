@@ -17,24 +17,33 @@ async function runETL() {
     resultBox.textContent = "";
 
     try {
-        const response = await fetch("https://etl-automation-tool-7.onrender.com", {
-            method: "POST",
-            body: formData
-        });
+        const response = await fetch(
+            "https://etl-automation-tool-7.onrender.com/run-etl",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
 
         const data = await response.json();
 
         loading.classList.add("hidden");
+
         resultBox.textContent = JSON.stringify(data, null, 2);
         resultBox.classList.remove("placeholder");
 
     } catch (err) {
         loading.classList.add("hidden");
-        alert("Backend not running");
+        alert("Backend not reachable");
     }
 }
 
 function downloadFile() {
-    window.open("http://127.0.0.1:8000/download-cleaned", "_blank");
+    window.open(
+        "https://etl-automation-tool-7.onrender.com/download-cleaned",
+        "_blank"
+    );
 }
+
+
 

@@ -17,7 +17,7 @@ async function runETL() {
     resultBox.textContent = "";
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/run-etl", {
+        const response = await fetch("https://etl-automation-tool-7.onrender.com", {
             method: "POST",
             body: formData
         });
@@ -37,3 +37,4 @@ async function runETL() {
 function downloadFile() {
     window.open("http://127.0.0.1:8000/download-cleaned", "_blank");
 }
+
